@@ -271,6 +271,17 @@ function App() {
               )}
             </s.TextDescription>
 
+            <s.TextTitle
+              style={{
+                textAlign: "center",
+                fontSize: 60,
+                fontWeight: "bold",
+                color: "var(--primary)",
+              }}
+            >
+              MAX SUPPLY: {CONFIG.MAX_SUPPLY}
+            </s.TextTitle>
+
 
             <s.TextTitle
               style={{
@@ -280,7 +291,7 @@ function App() {
                 color: "var(--primary)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              NAOMI MINTED: {data.totalSupply}
             </s.TextTitle>
 
 
