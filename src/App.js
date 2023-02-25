@@ -106,7 +106,7 @@ function App() {
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click to mint your NAOMI.`);
-  const [mintAmount, setMintAmount] = useState(3);
+  const [mintAmount, setMintAmount] = useState(2);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
     SCAN_LINK: "",
@@ -422,7 +422,7 @@ function App() {
                         color: "var(--primary)",
                       }}
                     >
-                      {(mintAmount * CONFIG.DISPLAY_COST).toFixed(2)} ETH
+                      {(mintAmount * CONFIG.DISPLAY_COST).toFixed(3)} ETH
                     </s.TextDescription>
 
                     <s.SpacerSmall />
